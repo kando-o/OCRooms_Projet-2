@@ -1,0 +1,474 @@
+        /* Mettre la page à 0 de marge et 0 de padding par defaut/ Inclu aussi les éléments Befort et After */
+
+*, ::before, ::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+        /* Skill pour mettre la police par defaut sur 10px au lieux de 16px */
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+.bloc_page{
+    margin: 0rem auto;
+    margin: 0rem auto;
+    width: auto;
+        /* Le site ne peut pas faire plus de 1300PX de largeur  */
+}
+.image_reservia{
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+        /* Début NAV + Image Reservia */
+nav{
+    width: 90%;
+    height: auto;
+    border: 1px solid whitesmoke;
+    margin: 1rem auto
+}
+.list-nav{
+    display: block;
+    float: right;
+}
+.items{
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+nav li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+nav li a::after{
+    content: "";
+    display: block;
+    width: 0px;
+    position: relative;
+    margin: 2rem auto auto auto;
+    height: 0.2rem;
+    border-radius: 2px;
+    transition: width 0.2s ease-in;
+    background-color: #0065FC;
+}
+nav li a:hover::after{
+    width: 100%;
+}
+nav li a:hover:not(.not_border){
+    border: none;
+}
+.active{
+    color: #0065FC;
+    border: none ;
+}
+        /* Début Réservia */
+.reservia{
+    display: flex;
+    flex-direction: column;
+    width: 130rem;
+    height: auto;
+    margin: 3rem auto auto auto;
+    /* border: steelblue solid 1px; */
+}
+        /* Début search */
+.search{
+    display: flex;
+    width: 40rem;
+    margin: 3rem;
+    border: rgb(181, 181, 181) solid 1px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+        /* Début localisation + img localisation */
+.localisation{
+    background-color: rgb(192, 191, 191);
+    padding: 0.8rem;
+}
+.localisation img{
+    position: relative;
+    top: 0.3rem; 
+    cursor: pointer;
+}
+        /* Début input + btn recherche */
+input{
+    height: 4.3rem;
+    width: 26rem;
+    font-weight: 700;
+    color: black;
+    font-size: 1.5rem;
+    border: none;
+}
+button{
+    background-color: #0065FC;
+    color: whitesmoke;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+        /* Début Filtres */
+.filtres{
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+    /* border: steelblue solid 1px; */
+}
+.filtres h2{
+    margin-right: 2rem;
+    position: relative;
+    top: 1rem;
+    font-weight: 700;
+}
+.itemsFiltres{
+    width: auto;
+    border: rgb(192, 191, 191) 1px solid;
+    height: auto;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    font-weight: 700;
+}
+.itemsFiltresImages{
+    float: left;
+    width: 4.7rem;
+    border-radius: 50%;
+    padding: 1.5rem;
+    background-color: #b9d3fa;
+}
+.itemsFiltresImages i{
+    color: #0065FC;
+}
+        /* Alignement du txt */
+.itemsFiltres a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    top: 0.9rem;
+    padding: 1.5rem;
+}
+        /* Début Info */
+.info{
+    width: 90%;
+    height: auto;
+    font-size: 1.5rem;
+    margin: 3rem auto;
+}
+.info img{
+    float: left;
+}
+.info p{
+    margin-left: 4rem;
+    position: relative;
+    top: 0.9rem;
+}
+        /* Début Séction Hébergement + Populaires */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    max-width: 130rem;
+    margin: 3rem auto;
+    /* border: blue solid 1px; */
+}
+        /* Container Hebergement Marseille */
+.liste_hebergement{
+    width: 94.7rem;
+    height: auto;
+    margin: 0rem 1rem 0rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;  
+    border-radius: 2rem; 
+    /* border: blue solid 1px; */
+}
+.liste_hebergement h2:nth-child(1){
+    padding: 2rem;
+    font-weight: 800;
+}
+        /* Bloc Hébergement */
+.div_hebergement{
+    display: flex;
+    flex-wrap: wrap;
+}
+        /* Itemes Hébergement: Gestion taille des items/blocs contenant les images  */
+.hebergement{
+    width: 27rem;
+    height: 32rem;
+    margin: 0rem auto 2rem auto;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.75);
+    background-color: white;
+    flex-shrink: 1;
+    /* font-size: 1.5rem; */
+}
+        /* Image Hebergement: Gestion du remplissage de l'image Hébergement */
+.hebergement img{
+    width: 100%;
+    height: 20rem;
+    padding: 0.6rem;      
+    border-radius: 2rem 2rem 0rem 0rem;  
+}
+.hebergement p{
+    font-size: 1.7rem;
+    margin-left: 0.6rem;
+}
+.hebergement h2{
+    margin-left: 0.6rem;
+}
+        /* Début les plus Populaire Bloc Populaire */
+.populaires{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    width: 33rem;
+    border-radius: 2rem;
+    margin: 0rem 0rem 0rem 1rem;
+}
+        /* Container populaire */
+.div_populaires{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 2rem;
+}
+        /* Style h2 populaire */
+.populaires h2:nth-child(1){
+    padding: 2rem;
+    font-weight: 800;
+}
+        /* Itemes Populaire:Gestion des tailles box color */
+.items_populaires{
+    font-size: 1.3rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: white;
+    margin: 0rem 0rem 10rem 0rem ;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.75);        
+    /* border: 1px red solid; */
+}
+.img_populaire{
+    width: 37%;
+    padding: 0.3rem;
+    height: 13rem;
+    float: left;
+}
+        /* Gestion img populaire */
+.img_populaire img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Permet de rogner l'image parfaitement peut importe son oriantation */
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+        /* Début container Activité */
+.galerie_activite{
+    max-width: 130rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    /* border: khaki 1px solid; */
+}
+.galerie_activite h2{
+    padding: 2rem;
+}
+.list_activité{
+    width: auto;
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: red 1px solid; */
+
+}
+        /* Bloc image activité: Gestion taille du bloc */
+.item_activite{
+    width: 29rem;
+    height: 20rem;
+    margin: 1rem ;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-radius: 2rem 2rem 2rem 2rem;
+    flex-shrink: 0;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.75);        
+}
+.item_activite p{
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+        /* Gestion img activité */
+.item_activite img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+.item_activite:nth-child(1){
+    height: 50rem;
+    /* border: black 1px solid; */
+}
+        /* Taille img1 */
+.img1 img{
+    height: 92%;   
+}
+        /* Gestion Taille Bloc 2 */
+.item_activite:nth-child(2){
+    height: 28rem;
+    border: black 1px solid;
+}
+        /* Taille img2  */
+.img2 img{
+    height: 85% ;
+}
+        /* Gestion Taille Bloc 3 */
+.item_activite:nth-child(3){
+    height: 20rem;
+    border: black 1px solid;
+}
+        /* Taille img3  */
+.img3 img{
+    height: 80%;
+}
+        /* Gestion Taille Bloc 4 */
+.item_activite:nth-child(4){
+    height: 50rem;
+    border: black 1px solid;
+}
+        /* Taille img4  */
+.img4 img{
+    height: 92% ;
+}
+        /* Gestion Taille Bloc 5 */
+.item_activite:nth-child(5){
+    height: 27rem;
+}
+        /* Taille img5  */
+.img5 img{
+    height: 85% ;
+}
+        /* Gestion Taille Bloc 6 */
+.item_activite:nth-child(6){
+    height: 21rem;
+}
+        /* Taille img6 */
+.img6 img{
+    height: 81% ;
+}
+        /* Début Footer  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+    height: 15rem;
+    background-color: rgb(173, 169, 169);
+}
+footer h2{
+    padding: 2rem;
+}
+footer p{
+    padding-top:1rem;
+    padding-left: 2rem;
+}
+
+        /* Début MEDIAQUERIS */
+        
+        @media screen and (max-width: 1296px)
+        { 
+
+    
+    .reservia{
+        width: 90%;
+    }
+    .reservia, h1 p{
+        padding: 0rem 2rem 0rem 1.5rem;
+    }        
+    .search{
+        width: auto;
+        margin: 2rem 2rem auto 2rem ;
+    }
+    .filtres{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    }
+    .filtres h2{
+        width: 100%;
+        padding: 0rem 0rem 2rem 2rem;
+
+    }
+    .itemsFiltres{
+        margin: 0.5rem auto;
+    }
+    .itemsFiltres:nth-child(3){
+        width: 14rem;
+    }
+    .itemsFiltres a{
+        padding: 0.9rem;
+
+    }
+    .info{
+        width: auto;
+    }
+
+    .search button{
+        border-radius: 11px;
+        width: 12rem;
+        /* color: transparent; */
+        
+
+    }
+    .liste_hebergement{
+        border-radius: none;
+        margin: 0rem auto;
+        border-radius: 0px;
+    }
+    .populaires{
+        margin:auto auto 0rem auto;
+        background-color: white;
+        
+    }
+    .populaires h2:nth-child(1){
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    .items_populaires:nth-child(3){
+        margin:auto auto 0rem auto
+    }
+    .list_activité{
+        /* display: inline-block; */
+        width: auto;
+        height: auto;
+        margin: 0rem auto;
+    }
+    .galerie_activite h2:nth-child(1){
+        font-size: 2.2rem;
+        font-weight: 800;
+
+    }
+    .item_activite{
+        height: 15rem;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 1.5rem;
+    }
+    
+}
+   
+
+
