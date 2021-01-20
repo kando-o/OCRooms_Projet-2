@@ -156,7 +156,8 @@ button{
     line-height: 5rem ;
     /* Gérer la hauteur de ligne */
     align-content: center;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 2rem;
 }
 .itemsFiltres{
     width: auto;
@@ -170,7 +171,6 @@ button{
 .itemsFiltresImages{
     float: left;
     position: relative;
-    right: 0.2rem;
     width: 4.7rem;
     height: 4.7rem;
     border-radius: 50%;
@@ -215,7 +215,7 @@ section{
 }
         /* Container Hebergement Marseille */
 .liste_hebergement{
-    width: 75%;
+    width: 70%;
     height: auto;
     margin: 0rem 1rem 0rem 0rem;
     display: flex;
@@ -227,6 +227,7 @@ section{
 .liste_hebergement h2:nth-child(1){
     padding: 2rem;
     font-weight: 800;
+    font-size: 2rem;
 }
         /* Bloc Hébergement */
 .div_hebergement{
@@ -240,7 +241,7 @@ section span {
 }
         /* Itemes Hébergement: Gestion taille des items/blocs contenant les images  */
 .hebergement{
-    width: 27rem;
+    width: 25rem;
     height: 29.5rem;
     margin: 0rem auto 2rem auto;
     overflow: hidden;
@@ -266,6 +267,8 @@ section span {
 .hebergement h2{
     margin-left: 0.6rem;
     padding: 0rem 0rem 0rem 1.5rem;  
+    font-size: 2rem;
+    font-weight: 800;
 }
 .etoiles{
     padding: 0rem 0rem 0rem 2rem;
@@ -280,7 +283,7 @@ section span {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: whitesmoke;
-    width: 23%;
+    width: 28%;
     border-radius: 2rem;
     margin: 0rem 0rem 0rem 1rem;
 }
@@ -291,7 +294,7 @@ section span {
     width: 100%;
 }
 .titre_populaire i{
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: relative;
     top: 2rem;
     left: 7.5rem;
@@ -304,15 +307,19 @@ section span {
 }
         /* Style h2 populaire */
 .populaires h2:nth-child(1){
-    padding: 2rem;
+    padding: 2rem 0rem 2rem 2rem;
     font-weight: 800;
+    font-size: 2rem;
 }
 .div_populaires h3{
-    padding: 2rem 0rem 0rem 11rem;
+    padding: 1rem 0rem 0rem 14.5rem;    
+    font-size: 1.7rem;
+    font-weight: 800;
 }
-/* .div_populaires p{
-    padding: 0rem 0rem 0rem 11rem;
-} */
+.div_populaires p{
+    padding: 0rem 0rem 0rem 14.5rem;
+}
+
         /* Itemes Populaire:Gestion des tailles box color */
 .items_populaires{
     font-size: 1.3rem;
@@ -339,7 +346,7 @@ section span {
     border-radius: 2rem 0rem 0rem 2rem;
 }
 .etoiles_populaires{
-    padding: 0rem 0rem 0rem 11rem;
+    padding: 0rem 0rem 0rem 14.5rem;
     color: #0065FC;
 }
         /* Début container Activité */
@@ -352,6 +359,8 @@ section span {
 }
 .galerie_activite h2{
     padding: 2rem 0rem 2rem 4.5rem;
+    font-size: 2rem;
+    font-weight: 800;
 }
 .list_activité{
     width: auto;
@@ -364,7 +373,7 @@ section span {
 }
         /* Bloc image activité: Gestion taille du bloc */
 .item_activite{
-    width: 30rem;
+    width: 22.8%;
     margin: 1rem;
     overflow: hidden;
     flex-wrap: wrap;
@@ -377,7 +386,7 @@ section span {
 .item_activite p{
     padding: 1rem;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
         /* Gestion img activité */
 .item_activite img{
@@ -439,8 +448,15 @@ footer{
     justify-content: space-between;
     width: 100%;
     margin: 3rem auto;
-    height: 15rem;
-    background-color: rgb(173, 169, 169);
+    height: auto;
+    background-color: whitesmoke;
+}
+.widthFooter{
+    width: 97%;
+    height: auto;
+    display: inherit;
+    justify-content: inherit;
+    margin: 0rem auto;
 }
 footer h2{
     padding: 2rem;
@@ -494,7 +510,7 @@ footer p{
     }
     .reservia h1 {
         padding: 2rem 2rem 0rem 1.5rem;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 2.7rem;
     }  
     .reservia p{
@@ -502,12 +518,14 @@ footer p{
         font-size: 1.5rem;
     }
     .search2{
-        width: 32.5rem;
+        width: 85%;
         margin: 3rem 0rem 0rem 2rem;
     }
     .searchButton{
         border-radius: 1rem;
         width: 5rem;
+        position: relative;
+        right: 1rem;
     }
     .searchButton p{
         display: none;
@@ -543,7 +561,7 @@ footer p{
         top: -0.4rem;
     }
     section{
-        border-radius: none;
+        border-radius: 0px;
         width: 100%;
         height: auto;
         border-radius: 0px;
@@ -570,26 +588,26 @@ footer p{
         background-color: whitesmoke; 
     }
     .titre_populaire i{
-        left: 5.5rem;
+        left: 21%;
     }
     .items_populaires{
-        width: 80%;
+        width: auto;
         margin: 1.5rem auto;
     }
     .populaires h2:nth-child(1){
         font-size: 2.2rem;
-        font-weight: 900;
+        font-weight: 700;
         margin-left:3rem;
     }
     .items_populaires  p{
-        padding: 1rem 0rem 0rem 13.5rem;    
+        padding: 1rem 0rem 0rem 49.5%;    
     }
     .div_populaires h3{
-        padding: 1rem 0rem 0rem 13.5rem;    
+        padding: 1rem 0rem 0rem 49.5%;    
     }
     .etoiles_populaires
     {
-        padding: 0rem 0rem 0rem 13.5rem;    
+        padding: 0rem 0rem 0rem 49.5%;    
     }
     .list_activité{
         height: auto;
@@ -640,12 +658,11 @@ footer p{
         font-size: 2.2rem;
         font-weight: 800;
     }
-    footer{
+    .widthFooter{
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
         padding: 1.5rem;
+
     } 
 }
 
@@ -698,6 +715,12 @@ footer p{
         min-width: 32rem;
         margin: 3rem auto;
         height: auto;
+        background-color: white;
+
+    }
+    .items_populaires {
+        margin: 0rem auto;
+
     }
     .galerie_activite
     {
@@ -720,25 +743,107 @@ footer p{
     }
     
 }
+        /* Début mediaQueries 451px --> 600px format Tablette bis */
+
+@media screen and (min-width: 450px) and (max-width:600px)
+{
+    .hebergement{
+        width: 80%;
+    }
+    .list_activité{
+        height: auto;
+    }
+    .item_activite{
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+}
+        /* Début mediaQueries 901px --> 1299px format laptop 14pouce */
+
 @media screen and (min-width: 901px) and (max-width:1299px)
 {
+    nav{
+        width: 100%;
+    }
+    .reservia{
+        width: 100%;
+        text-align: center;
+    }
+    .search2{
+        margin: 0rem auto;
+    }
+    .filtres{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .filtres p{
+        text-align: center;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+    }
+    .info P{
+        margin-left: 1rem;   
+    }
     .itemsFiltres a{
         padding:0rem 0.4rem;
         line-height: 2.7rem;
-        /* border: solid; */
+    }
+    .liste_hebergement{
+        width: 95%;
+        margin: 0rem auto;
+    }
+    .populaires{
+        margin: 3rem auto;
+        width: 40%;
+        background-color: white;
+    }
+    .populaires h3{
+        margin-left: 2rem;
+    }
+    .populaires p{
+        margin-left: 2rem;
+    }
+    .etoiles_populaires {
+        margin-left: 2rem;
     }
     .galerie_activite{
         width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
     }
     .list_activité{
         flex-wrap: wrap;
-        border: solid;
+        height: 67rem;
+    }
+    .item_activite{
         height: 30rem;
-        flex-direction: row;
-
+        width: 30%;
+    }
+    .item_activite img{
+        height: 87%;
     }
 }
- 
+        /* Début mediaQueries 1299px format Tablette pour Section + div_Populaire */
+
+@media screen and (max-width: 1299px)
+{
+    section{
+        margin: 3rem 0rem 0rem 0rem
+    }
+    .items_populaires{
+        margin: 2rem 0rem 2rem 0rem;
+    }
+    .galerie_activite{
+        margin: 0rem;
+    }
+
+}
+
+
    
 
 
