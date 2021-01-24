@@ -14,7 +14,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .bloc_page{
-    max-width: 149rem;
+    max-width: 199rem;
         /* ***************************** Le site ne peut pas faire plus de 1490PX de largeur *****************************  */
     margin: 5rem;
 }
@@ -121,12 +121,12 @@ margin: 3rem 0rem;
     border-radius: 0rem 1rem 1rem 0rem;
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
 }
 input{
     height: 4.3rem;
     width: 26rem;
     font-weight: 700;
-    color: red;
     font-size: 1.5rem;
     border: #F2F2F2 1px solid;
 }
@@ -235,7 +235,7 @@ section span {
     margin: 1rem auto;
     overflow: hidden;
     border-radius: 2rem;
-    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.30);
     background-color: white;
 }
 .hebergement a{
@@ -322,7 +322,7 @@ section span {
     background-color: white;
     width: 80%;
     margin: 3rem auto ;
-    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.75);        
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.30);        
     /* border: 1px red solid; */
 }
 .img_populaire{
@@ -375,7 +375,7 @@ section span {
     flex-shrink: 0;
     /* border: red 1px solid; */
     
-    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.75);        
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.30);        
 }
 .item_activite a{
     text-decoration: none;
@@ -454,9 +454,15 @@ footer{
     width: 97%;
     height: auto;
     display: inherit;
-    justify-content: inherit;
     margin: 0rem auto;
 }
+.items_footer{
+    margin-right: 30rem;
+}
+/* .items_footer:nth-child(2){
+    margin-right: 0rem;
+    border: solid;
+} */
 footer h2{
     padding: 2rem;
 }
@@ -735,7 +741,13 @@ footer p{
     .item_activite img{
         height: 87%;
     }
-    
+    .widthFooter{
+        justify-content: space-between;
+
+    }
+    .items_footer{
+        margin: 0rem;
+    }
 }
         /* ***************************** Début mediaQueries 451px --> 600px format Tablette bis ***************************** */
 
@@ -814,6 +826,14 @@ footer p{
     .item_activite img{
         height: 87%;
     }
+    .widthFooter{
+        justify-content: space-between;
+
+    }
+    .items_footer{
+        margin: 0rem;
+    }
+
 }
 @media screen and (min-width: 1089px) and (max-width: 1150px)
 {
@@ -833,6 +853,33 @@ footer p{
     }
     .galerie_activite{
         margin: 0rem;
+    }
+}
+@media screen and (min-width:1500px)
+{
+    footer{
+        width: 100%;
+        background-color: #fcfbfb;
+    }
+    .widthFooter{
+        widows: 100%;
+        justify-content: space-between;
+    }
+    .items_footer{
+        margin: 0rem;
+    }
+}
+@media screen and (min-width:2075px)
+{
+    footer{
+        width: 197rem;
+        margin: 0rem auto;
+    }
+    .bloc_page{
+        margin: 5rem auto;
+    }
+    .widthFooter{
+        width: 200rem;
     }
 }
 
